@@ -6,10 +6,9 @@ import android.util.Log;
 import android.widget.ProgressBar;
 
 import com.android.volley.VolleyError;
-import com.sample.git.R;
-
 import com.gitSample.common.dto.Configuration;
 import com.gitSample.common.io.ConfigManager;
+import com.sample.git.R;
 
 public class SplashActivity extends AppCompatActivity implements ConfigManager.OnCongifDownloadListner {
     private ProgressBar mLoader;
@@ -22,15 +21,16 @@ public class SplashActivity extends AppCompatActivity implements ConfigManager.O
         downloadConfig();
     }
 
-    private void initViews(){
+    private void initViews() {
         mLoader = (ProgressBar) findViewById(R.id.loader);
     }
 
-    private void downloadConfig(){
-       String configUrl = "http://drop.ndtv.com/ndtv/apps/config/test/ndtvapps/lollypop-english.json";
+    private void downloadConfig() {
+        // add config url, while testing
+        String configUrl = "config url";
 
         ConfigManager configManager = ConfigManager.getInstance();
-        if(configManager != null) {
+        if (configManager != null) {
             configManager.downLoadConfig(this, configUrl, this);
         }
 
@@ -43,6 +43,6 @@ public class SplashActivity extends AppCompatActivity implements ConfigManager.O
 
     @Override
     public void onConfigFailed(VolleyError error) {
-      Log.d("Config Failed", error.toString());
+        Log.d("Config Failed", error.toString());
     }
 }
