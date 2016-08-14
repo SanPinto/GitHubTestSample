@@ -1,4 +1,4 @@
-package common.utils;
+package com.gitSample.common.utils;
 
 import android.content.Context;
 import android.os.Environment;

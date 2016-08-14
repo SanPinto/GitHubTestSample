@@ -1,4 +1,4 @@
-package common.io;
+package com.gitSample.common.io;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -14,7 +14,7 @@ import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
-import common.utils.FileUtils;
+import com.gitSample.common.utils.FileUtils;
 
 /**
  * Created by xyz on 8/13/2016.

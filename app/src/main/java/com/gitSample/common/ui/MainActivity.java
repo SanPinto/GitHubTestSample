@@ -1,4 +1,4 @@
-package common.ui;
+package com.gitSample.common.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
